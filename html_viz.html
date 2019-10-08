@@ -1,0 +1,13 @@
+<script>
+function path_row(subpath){
+        text = '';
+        text = text + '<td width="6%">' + get_time(subpath['dep_time']) + '</td>';
+        text = text + '<td width="40%">' + get_name(subpath['source']) + '</td>';
+        text = text + '<td width="6%">' + get_time(subpath['arr_time']) + '</td>';
+        text = text + '<td width="40%">' + get_name(subpath['dest']) + '</td>';
+        text = text + '<td width="6%">' + subpath['line'] + '</td>';
+        text = text + '<td width="5%">' + subpath['nhops'] + '</td>';
+        return text;
+    }
+</script>
+
